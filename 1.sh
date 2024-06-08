@@ -2,7 +2,7 @@
 
 # Check if the correct number of arguments are provided
 if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <path-to-directory> <remote-repository-url>"
+    echo "Usage: path to directory and remote repository url"
     exit 1
 fi
 
@@ -24,6 +24,6 @@ git commit -m "Initial commit"
 git remote add origin $REMOTE_REPO
 
 # Push the changes to the remote repository
-git push -u origin main
+git push -u origin master
 
-echo "Successfully pushed the contents of $DIRECTORY to $REMOTE_REPO"
+echo "Successfully moved $DIRECTORY content to $REMOTE_REPO"
