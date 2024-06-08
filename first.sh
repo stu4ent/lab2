@@ -10,17 +10,18 @@ fi
 DIRECTORY=$1
 REMOTE_REPO=$2
 
-# Initialize local git repository
+# Initialize local git repository in the specified directory
+cd $DIRECTORY
 git init
 
-# Add the remote repository
-git remote add origin $REMOTE_REPO
-
 # Add all files in the specified directory
-git add $DIRECTORY
+git add .
 
 # Commit the changes with the message "Initial commit"
 git commit -m "Initial commit"
+
+# Add the remote repository
+git remote add origin $REMOTE_REPO
 
 # Push the changes to the remote repository
 git push -u origin master
