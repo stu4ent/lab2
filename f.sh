@@ -24,6 +24,6 @@ git commit -m "Initial commit"
 git remote add origin $REMOTE_REPO
 
 # Push the changes to the remote repository
-git push -u origin master
+git push -u origin main
 
 echo "Successfully pushed the contents of $DIRECTORY to $REMOTE_REPO"
