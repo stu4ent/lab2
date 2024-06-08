@@ -23,6 +23,6 @@ git add $DIRECTORY
 git commit -m "Initial commit"
 
 # Push the changes to the remote repository
-git push -u origin main
+git push -u origin master
 
 echo "Successfully pushed the contents of $DIRECTORY to $REMOTE_REPO"
